@@ -116,4 +116,19 @@ public class Main {
 ```
 # 3. Complejidad
 
+> I) Entrada del valor de la variable "dimension"
+
+- Complejidad de tiempo: 𝑂(1)
+- Complejidad de espacio: 𝑂(1)
+
+> II) Ingreso de numeros enteros en la matriz en un rotación especifica 
+
+- Complejidad de tiempo: 𝑂(d²)
+- Complejidad de espacio: 𝑂(d²)
+
+> III) Impresión de la matriz cuadrada original y la matriz cuadrada rotada
+
+- Complejidad de tiempo: 𝑂(d²)
+- Complejidad de espacio: 𝑂(d²)
+
 
