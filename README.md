@@ -7,7 +7,8 @@
 # 2. Resolución
 
 > I) Entrada del valor de la variable "dimension"
-
+- Nuevamente se inicializa la libreria java  `"Scanner"` para ingresar datos.
+- Se ingresa el valor numero entero a variable `"d"` que equivaldra a las dimensiones de la matriz cuadratica.
 ```bash
 import java.util.Scanner;
 ```
@@ -21,8 +22,10 @@ import java.util.Scanner;
         d = sc.nextInt();;
     }
 ```
-> II) Ingreso de numeros enteros en la matriz en un rotación especifica 
+> II) Ingreso de numeros enteros en la matriz en un rotación especifica
 
+- Se llama a una función void `"Rotar(d)"` , la cual usara la vairable `"d"`.
+- A continuación inicializa la `Matriz[d][d]` y se ingresan los valores numericos de la matriz por elemento, a diferencia del recorrido de esquina izquierda a derecha ([i][j]) se cambian los parametros del index de la matriz para ordenar los valores en 90° ([j][d - i - 1]).
 ```bash
     Rotar(d);
 ```
@@ -42,6 +45,8 @@ import java.util.Scanner;
 ```
 
 > III) Impresión de la matriz cuadrada original y la matriz cuadrada rotada
+
+- Con la matriz rellena,se realizan dos bucles dobles para imprimir la matriz original y la matriz rotada.
 
 ```bash
     System.out.println("MATRIZ ORIGINAL: ");
@@ -118,17 +123,18 @@ public class Main {
 
 > I) Entrada del valor de la variable "dimension"
 
-- Complejidad de tiempo: 𝑂(1)
-- Complejidad de espacio: 𝑂(1)
+- Complejidad de tiempo: 𝑂(1) (el usuario puede ingresar valores inválidos repetidamente, pero cada entrada toma tiempo constante 𝑂(1))
+- Complejidad de espacio: 𝑂(1) (No se utilizan estructuras adicionales, y el espacio ocupado por las variables locales y la libreria `Scanner` es constante)
 
 > II) Ingreso de numeros enteros en la matriz en un rotación especifica 
 
 - Complejidad de tiempo: 𝑂(d²)
 - Complejidad de espacio: 𝑂(d²)
+  (Al tener una estructura bidimensional y bucles dobles que recorrer dichos formatos, la complejidad tiempo y espacio equivalen a 𝑂(d²))
 
 > III) Impresión de la matriz cuadrada original y la matriz cuadrada rotada
 
-- Complejidad de tiempo: 𝑂(d²)
-- Complejidad de espacio: 𝑂(d²)
+- Complejidad de tiempo: 𝑂(d²) (Dominada por el recorrido completo de la matriz para imprimir y calcular la rotación)
+- Complejidad de espacio: 𝑂(d²) (Dominada por el almacenamiento de las matrices original y rotada)
 
 
