@@ -20,12 +20,12 @@ import java.util.Scanner;
         if(d <= 0){
            d = sc.nextInt();;
         }
-    
-    Rotar(d);
-
-    }
 ```
-> II) Ingreso de numeros enteros en la matriz
+> II) Ingreso de numeros enteros en la matriz en un rotación especifica 
+
+```bash
+    Rotar(d);
+```
 
 ```bash
     public static void Rotar(int d){
@@ -38,6 +38,27 @@ import java.util.Scanner;
             System.out.print("["+i+"]"+"[" + j+"]");
             Matriz[j][d - i - 1] = sc.nextInt();           
         }
+    }
+```
+
+> III) Impresión de la matriz cuadrada original y la rotada
+
+```bash
+    System.out.println("MATRIZ ORIGINAL: ");
+    for(int i=0; i < d; i++){
+        for(int j=0; j < d;j++){
+            System.out.print("["+Matriz[j][d - i - 1]+"]");        
+        }
+    System.out.println("");    
+    }
+    
+    System.out.println("MATRIZ ROTADA: ");
+    for(int i=0; i < d; i++){
+        for(int j=0; j < d;j++){
+            System.out.print("["+Matriz[i][j]+"]");        
+        }
+    System.out.println("");    
+    }
     }
 ```
 
@@ -59,6 +80,15 @@ public class Main {
             Matriz[j][d - i - 1] = sc.nextInt();           
         }
     }
+
+    System.out.println("MATRIZ ORIGINAL: ");
+    for(int i=0; i < d; i++){
+        for(int j=0; j < d;j++){
+            System.out.print("["+Matriz[j][d - i - 1]+"]");        
+        }
+    System.out.println("");    
+    }
+    
     System.out.println("MATRIZ ROTADA: ");
     for(int i=0; i < d; i++){
         for(int j=0; j < d;j++){
@@ -78,8 +108,9 @@ public class Main {
         }
     
     Rotar(d);
-
+        
+         
     }
-
+    
 }
 ```
