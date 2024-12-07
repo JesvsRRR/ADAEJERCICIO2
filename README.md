@@ -14,6 +14,7 @@ import java.util.Scanner;
 
 ```bash
     public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
     System.out.println("Ingresar dimension [d]: ");
     int d = sc.nextInt();
     if(d <= 0){
@@ -99,6 +100,7 @@ public class Main {
 
     
     public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
     System.out.println("Ingresar dimension [d]: ");
     int d = sc.nextInt();
     if(d <= 0){
