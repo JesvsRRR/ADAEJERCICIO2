@@ -6,6 +6,8 @@
 
 # 2. Resolución
 
+> I) Entrada del valor de la variable "dimension"
+
 ```bash
 import java.util.Scanner;
 ```
