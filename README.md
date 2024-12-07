@@ -15,11 +15,11 @@ import java.util.Scanner;
 ```bash
     public static void main(String[] args) {
      Scanner sc = new Scanner(System.in);
+
+     do {
         System.out.println("Ingresar dimension [d]: ");
         int d = sc.nextInt();
-        if(d <= 0){
-           d = sc.nextInt();;
-        }
+     } while (d <= 0);
 ```
 > II) Ingreso de numeros enteros en la matriz en un rotación especifica 
 
@@ -101,11 +101,10 @@ public class Main {
     
     public static void main(String[] args) {
      Scanner sc = new Scanner(System.in);
+        do {
         System.out.println("Ingresar dimension [d]: ");
         int d = sc.nextInt();
-        if(d <= 0){
-           d = sc.nextInt();;
-        }
+        } while (d <= 0);
     
     Rotar(d);
         
@@ -114,3 +113,6 @@ public class Main {
     
 }
 ```
+# 3. Complejidad
+
+
