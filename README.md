@@ -41,7 +41,7 @@ import java.util.Scanner;
     }
 ```
 
-> III) Impresión de la matriz cuadrada original y la rotada
+> III) Impresión de la matriz cuadrada original y la matriz cuadrada rotada
 
 ```bash
     System.out.println("MATRIZ ORIGINAL: ");
