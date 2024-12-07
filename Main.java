@@ -1,5 +1,3 @@
-package dos;
-
 import java.util.Scanner;
 
 public class Main {
@@ -34,8 +32,7 @@ public class Main {
         }
     
     Rotar(d);
-        
-         
+
     }
     
 }
