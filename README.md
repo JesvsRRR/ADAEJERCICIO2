@@ -130,7 +130,7 @@ public class Main {
 
 - Complejidad de tiempo: 𝑂(d²)
 - Complejidad de espacio: 𝑂(d²)
-  (Al tener una estructura bidimensional y bucles dobles que recorrer dichos formatos, la complejidad tiempo y espacio equivalen a 𝑂(d²))
+  - (Al tener una estructura bidimensional y bucles dobles que recorrer dichos formatos, la complejidad tiempo y espacio equivalen a 𝑂(d²))
 
 > III) Impresión de la matriz cuadrada original y la matriz cuadrada rotada
 
