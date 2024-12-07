@@ -2,7 +2,7 @@ package dos;
 
 import java.util.Scanner;
 
-public class DOS {
+public class Main {
 
     public static void Rotar(int d){
     Scanner sc = new Scanner(System.in);    
