@@ -25,6 +25,21 @@ import java.util.Scanner;
 
     }
 ```
+> II) Ingreso de numeros enteros en la matriz
+
+```bash
+    public static void Rotar(int d){
+    Scanner sc = new Scanner(System.in);    
+    int[][] Matriz = new int[d][d];
+    
+    
+    for(int i=0; i < d; i++){
+        for(int j=0; j < d;j++){
+            System.out.print("["+i+"]"+"[" + j+"]");
+            Matriz[j][d - i - 1] = sc.nextInt();           
+        }
+    }
+```
 
 ### Codigo completo
 
